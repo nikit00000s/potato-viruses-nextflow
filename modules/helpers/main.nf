@@ -1,6 +1,6 @@
 def helpMessage() {
     log.info"""
-    Test help
+    Seriously? I don't have time for this ahahaha
     """.stripIndent()
 }
 
