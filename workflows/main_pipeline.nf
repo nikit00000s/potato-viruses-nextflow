@@ -9,13 +9,14 @@ if (params.get('help', 'false').toBoolean()) {
     exit 0
 }
 
-Channel
-    .from( params.get('libs') )
-    .map{ it -> setFullPathToReads(it) }
-    .map{ it -> setLibraryName(it) }
-    .set{ libs_original }
-
     
 workflow MAIN_PIPELINE {
+
+    Channel
+        .from( params.get('libs') )
+        .map{ it -> setLibraryName(it) }
+        .map{ it -> setFullPathToReads(it) }
+        .set{ libs_original }
+    
     FASTQC(libs_original)
 }

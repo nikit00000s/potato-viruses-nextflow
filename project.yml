@@ -4,6 +4,7 @@ path_to_working_dir: /home/nikita/S6572_nextflow_test
 path_to_libs: /media/data/ArhivData/04102022/S6572/S6572_1/01_fastq
 pattern_for_reads: RNA_S6572Nr*.*.fastq.gz
 pattern_for_libs: RNA_S6572Nr*
+enable_conda: false
 libs: [
   {meta: {idx: 1, region: "Москва", variety: 'Ла Страда'}},
   {meta: {idx: 2, region: "Астрахань", variety: 'Индиго'}}
