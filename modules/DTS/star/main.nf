@@ -1,3 +1,0 @@
-process STAR_DTS {
-    
-}
